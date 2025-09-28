@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tipos de Café - Daniel Vargas Donaires </title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#2f3438;
+      --teal:#24b0a6;
+      --card:#1f2629;
+      --muted:#bfc6c8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: #eef2f3;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:20px 3%;max-width:1200px;margin:0 auto;
+    }
+    .brand{display:flex;align-items:center;gap:14px;}
+    .logo{
+      width:56px;height:56px;border-radius:10px;
+      background:linear-gradient(135deg,#3a3f42, #000);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:var(--teal);
+      box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:0.95rem;}
+    nav a:hover{color:#fff}
+    .hero{
+      max-width:1200px;margin:12px auto;
+      padding:0 3%;text-align:center;
+    }
+    .hero h1{
+      font-family:"Pacifico",cursive;
+      font-size:46px;color:#fff;margin-bottom:12px;
+    }
+    .hero p{color:var(--muted);max-width:640px;margin:0 auto 22px;}
+    .section{max-width:1200px;margin:36px auto;padding:0 3%;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
+    .card{
+      background:var(--card);padding:18px;border-radius:14px;text-align:center;
+      min-height:220px;box-shadow:0 6px 16px rgba(0,0,0,0.4);
+    }
+    .card img{
+      width:100%;height:140px;object-fit:cover;
+      border-radius:10px;margin-bottom:12px;
+    }
+    .card h4{margin:0 0 6px 0}
+    .card p{color:var(--muted);font-size:0.95rem}
+    footer{
+      max-width:1200px;margin:28px auto 60px;
+      padding:0 3%;color:var(--muted);display:flex;justify-content:space-between;gap:12px;align-items:center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo">DV</div>
+      <div>
+        <div style="font-weight:600">Daniel Vargas Donaires y Khaterine Salazar</div>
+        <div style="font-size:0.82rem;color:var(--muted)">Tipos de Café · Proyecto</div>
+      </div>
+    </div>
+    <nav>
+      <a href="https://daniel2901m.github.io/COFFE-TIME/">Inicio</a>
+      <a href="https://daniel2901m.github.io/Tipos-De-Cafe/">Tipos de Café</a>
+      <a href="https://daniel2901m.github.io/Beneficios/">Beneficios</a>
+      <a href="https://daniel2901m.github.io/TRABAJA-CON-NOSOTROS/">Trabaja con Nosotros</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Tipos de Café</h1>
+    <p>Descubre nuestra selección de cafés más populares y exclusivos del mundo. Desde un espresso intenso hasta un affogato con helado, aquí encontrarás el que va contigo.</p>
+  </section>
+
+  <!-- SECCIÓN CAFÉS -->
+  <section class="section" id="cafes">
+    <div class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800" alt="Espresso">
+        <h4>Espresso</h4>
+        <p>Café concentrado, intenso y aromático, base de muchas preparaciones.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800" alt="Ristretto">
+        <h4>Ristretto</h4>
+        <p>Un espresso más corto, con sabor fuerte y menos amargo.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800" alt="Lungo">
+        <h4>Lungo</h4>
+        <p>Espresso largo, más suave pero con el mismo cuerpo aromático.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=800" alt="Americano">
+        <h4>Americano</h4>
+        <p>Espresso rebajado con agua caliente, ideal para quienes buscan suavidad.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800" alt="Cappuccino">
+        <h4>Cappuccino</h4>
+        <p>Mezcla equilibrada de espresso, leche y espuma cremosa.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800" alt="Latte">
+        <h4>Latte</h4>
+        <p>Café con abundante leche caliente y una fina capa de espuma.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800" alt="Macchiato">
+        <h4>Macchiato</h4>
+        <p>Espresso “manchado” con un toque de espuma de leche.</p>
+      </article>
+      <article class="card">
+        <img src="https://i.postimg.cc/Prg0jtkR/360-F-1404785474-a1z-S4-Meol-Nw-MWw7-YNNc2-U8-RCX1-LDMK2-Y.jpg" alt="Flat White">
+        <h4>Flat White</h4>
+        <p>Suave y cremoso, con espresso y microespuma de leche.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800" alt="Frappé">
+        <h4>Frappé</h4>
+        <p>Bebida helada a base de café, perfecta para refrescarse.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=800" alt="Cold Brew">
+        <h4>Cold Brew</h4>
+        <p>Café infusionado en frío, menos ácido y con gran suavidad.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=800" alt="Iced Coffee">
+        <h4>Iced Coffee</h4>
+        <p>Café preparado caliente y luego servido con hielo.</p>
+      </article>
+      <article class="card">
+        <img src="https://i.postimg.cc/5yZKbmDz/360-F-685036582-QOdhu9-QUVJQ2-Jd-JJz9rh-Pb-VLt-PZ7-KNNQ.jpg" alt="Mocha">
+        <h4>Mocha</h4>
+        <p>Unión de café, leche y chocolate, perfecto para los golosos.</p>
+      </article>
+      <article class="card">
+        <img src="https://i.postimg.cc/kM0dnNQc/360-F-217270060-e-UYPDgbr1-Dw0nh4-Va-Uo-Zrl3-Al-BDNyb-WT.jpg" alt="Irish Coffee">
+        <h4>Irish Coffee</h4>
+        <p>Café caliente con whisky irlandés y crema batida.</p>
+      </article>
+      <article class="card">
+        <img src="https://i.postimg.cc/RZCp9qDt/Captura-de-pantalla-2025-09-28-013305.jpg" alt="Bombón">
+        <h4>Bombón</h4>
+        <p>Café espresso con leche condensada, dulce y cremoso.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800" alt="Affogato">
+        <h4>Affogato</h4>
+        <p>Espresso servido sobre una bola de helado de vainilla.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div>
+      <strong>Daniel Vargas Donaires</strong><br>
+      <small>Proyecto demostrativo · Tipos de café</small>
+    </div>
+    <div style="text-align:right">
+      <div style="font-weight:600">Contacto</div>
+      <div style="color:var(--muted);font-size:0.95rem">Facebook · WhatsApp · Daniel@interprise.com</div>
+    </div>
+  </footer>
+
+</body>
+</html>
